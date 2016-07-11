@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 	double cpu_time = 0.0;
 	if (argc < 3) {
 		fprintf(stdout, "Usage: %s [file_name] [decode file]\n", argv[0]);
+		exit(-1);
 	}
 
 	FILE *fp;
